@@ -1,0 +1,1 @@
+console.log("Hello Mushu! JavaScript is working 🚀");
