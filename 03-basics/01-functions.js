@@ -69,27 +69,45 @@ H*/
 //console.log(loginUserMessage("hitesh")) //override --hitesh just logged in
 
 
+// function calculateCartPrice(num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200,300,500))
+// //Output - 200
+
+
+// function calculateCartPrice( ...num1){
+//     return num1
+// }
+// console.log(calculateCartPrice(200,300,500))
+//[ 200, 300, 500 ]
+
 
 // function calculateCartPrice(val1, val2, ...num1){
 //     return num1
 // }
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+//[ 500, 2000 ]
 
-// // console.log(calculateCartPrice(200, 400, 500, 2000))
 
-// const user = {
-//     username: "hitesh",
-//     prices: 199
-// }
+//object hai
+const user = {
+    username: "hitesh",
+    prices: 199
+}
 
-// function handleObject(anyobject){
-//     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
-// }
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
+}
+handleObject(user)
+//output--Username is hitesh and price is 199
 
-// // handleObject(user)
+// And no need to create a separatye object we can directly pass object into function
 // handleObject({
 //     username: "sam",
 //     price: 399
 // })
+
 
 // const myNewArray = [200, 400, 100, 600]
 
@@ -97,5 +115,6 @@ H*/
 //     return getArray[1]
 // }
 
-// // console.log(returnSecondValue(myNewArray));
-// console.log(returnSecondValue([200, 400, 500, 1000]));
+// // console.log(returnSecondValue(myNewArray)); //400
+//here also directly pass array to the function
+// console.log(returnSecondValue([200, 400, 500, 1000])); //400
