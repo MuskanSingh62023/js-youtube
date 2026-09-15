@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    //Creating a div element
+    const div = document.createElement('div')
+    console.log(div);
+    //output -- <div></div>
+    //div abhi memory me hai, but page me nahi hai --attached to DOM
+    div.className = "main"
+    //output -- <div class="main"></div>
+    //Math.round(Math.random() * 10 + 1) //1-10
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title", "generated title")
+    //output -- <div class="main" id="1" title="generated title"></div>
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    //output -- <div class="main" id="1" title="generated title" style="background-color: green; padding: 12px;"></div>
+    // div.innerText = "Chai aur code"
+    //output -- <div class="main" id="1" title="generated title" style="background-color: green; padding: 12px;">Chai aur code</div>
+    
+    //Creating a text node
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+
+    //Adding the div to the body==will attach the div to the DOM
+    document.body.appendChild(div)
+</script>
+</html>
